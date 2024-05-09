@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.logo i{
+    margin-right: 10%;
+}
+
+.logo p{
+    width: 80%;
+    font-size: 1em;
+}
+
+nav{
+    padding-inline: 5%;
+    background-color: darksalmon;
+    grid-area: navBar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section{
+    background-color:lightgray;
+    grid-area: search;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section p{
+    margin: 0;
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: rgb(56, 56, 56);
+}
+
+.drop{
+    background-color: aliceblue;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2%;
+    color: rgb(56, 56, 56);
+}
+
+main{
+    background-color: lightpink;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: rgb(241, 111, 133);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0;
+}
+
+.redes{
+    font-size: 1.6em;
+    margin-bottom: 2%;
+}
+
+.card{
+    width: 80vw;
+    border: 1px;
+    border-style:ridge;
+    border-radius: 10%;
+    border-color:rgb(236, 64, 44);
+    background-color: rgb(245, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+
+}
+
+button{
+    background-color: lightcoral;
+    color: white;
+    font-weight: 500;
+    padding: 0.8em;
+    border-radius: 14%;
+    font-size: 1.1em;
+    border: none;
+}
+
+button:focus{
+    background-color: white;
+    color: black;
+}
+
+.next{
+    font-size: 1.3em;
+    background-color: darksalmon;
+    padding: 2%;
+    margin-block: 2%;
+}
+
+.next a{
+    padding: 3px;
+    width: 5%;
+    
+    color: white;
+    border-color: coral;
+    text-decoration: none;
+}
+
+.imagen{
+    width: 80%;
+    border-radius: 10%;
+}
+
+.page{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "navBar"
+    "search"
+    "main"
+    "footer";
+    grid-template-rows: 10% 14% auto 13%;
+}
