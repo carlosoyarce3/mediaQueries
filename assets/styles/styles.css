@@ -27,6 +27,10 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+.links{
+
+    display: none;
+}
 
 section{
     background-color:lightgray;
@@ -84,8 +88,16 @@ footer p{
     margin-bottom: 2%;
 }
 
+.productos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
 .card{
-    width: 80vw;
+    width: 75vw;
     border: 1px;
     border-style:ridge;
     border-radius: 10%;
@@ -95,6 +107,7 @@ footer p{
     flex-direction: column;
     align-items: center;
     padding: 3%;
+    margin-block: 3%;
 
 }
 
@@ -142,5 +155,104 @@ button:focus{
     "search"
     "main"
     "footer";
-    grid-template-rows: 10% 14% auto 13%;
+    grid-template-rows: 10% 14% auto 20%;
+}
+
+
+@media (min-width : 577px){
+
+    .page{
+        height: 100vh;
+        grid-template-areas: 
+        "navBar search"
+        "navBar main"
+        "navBar main"
+        "footer main"
+        ;
+
+        grid-template-columns: 20% auto;
+        grid-template-rows: 10% auto auto 20%;
+
+    }
+
+    .card{
+        width: 10vw;
+        font-size: 1em;
+        margin: 1%;
+    }
+     main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        overflow-y: scroll;
+     }
+     button{
+        padding: 0.3em;
+        font-size: 0.6em;
+     }
+
+     .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+     .imagen{
+        width: 100%;
+     }
+
+     nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+     }
+
+     .logo{
+        width: 100%;
+        justify-content:start;
+        font-size: small;
+        align-items: center;
+     }
+
+     .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .links a{
+        text-decoration: none;
+        font-size: x-small;
+        color: black;
+        margin-block: 6%;
+     }
+
+     .menu{
+        display: none;
+     }
+     footer{
+        justify-content: space-around;
+     }
+
+     .redes{
+        font-size:medium;
+        justify-content: space-around;
+        align-items: center;
+     }
+
+     footer p{
+        text-align: center;
+        font-size: x-small;
+     }
+
+     section p{
+        font-size: xx-small;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .drop{
+        width: 90%;
+     }
+
 }
